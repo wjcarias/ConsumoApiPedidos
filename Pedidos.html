@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/Pedidos.js"></script>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="consulta mt-4">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Lista de pedidos</h3>
+                </div>
+                
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="table-responsive">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Id del socio</th>
+                            <th>Fecha del pedido</th>
+                            <th>Detalle</th>
+                            <th>Subtotal</th>
+                            <th>Total ISV</th>
+                            <th>Total</th>
+                            <th>Fecha de entrega</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="pedidos">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Agregar pedidos</h3>
+                    
+                </div>
+                <div class="col-12">
+                    <form class="pedido">
+                        <label for="">Id socio</label>
+                        <input type="text" id="Id_Socio" class = "form-control" placeholder="Ingrese su Id de socio">
+                        <label for="">Fecha del pedido</label>
+                        <input type="text" id="Fecha_Pedido" class = "form-control" placeholder="Ingrese la fecha con el formato AAAA-MM-DD">
+                        <label for="">Detalle</label>
+                        <input type="text" id="Detalle" class = "form-control" placeholder="Descripcion del pedido">
+                        <label for="">Sub total</label>
+                        <input type="text" id="Sub_Total" class = "form-control" placeholder="Subtotal">
+                        <label for="">Total ISV</label>
+                        <input type="text" id="Total_ISV" class = "form-control" placeholder="Impuesto sobre venta">
+                        <label for="">Total</label>
+                        <input type="text" id="Total" class = "form-control" placeholder="Total">
+                        <label for="">Fecha de entrega</label>
+                        <input type="text" id="Fecha_Entrega" class = "form-control" placeholder="Fecha de entrega con el formato AAAA-MM-DD">
+                        <label for="">Estado</label>
+                        <input type="text" id="Estado" class = "form-control" placeholder="Estado del pedido">
+                        <hr>
+                        <div class="button">
+                            <input type="submit" id="btnagregar" onclick="Agregarpedido()" value="Ingresar pedido" class= "btn btn-success">
+                                   
+                        </div>
+                    </form>    
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    
+
+</body>
+
+</html>
